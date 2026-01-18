@@ -1,25 +1,24 @@
 package LAB_01;
 
-import LAB_01.Q01.Calculator;
 
+import LAB_01.calculator.Calculator;
 import java.util.Scanner;
 
 public class C01_Q1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("enter the value of a : ");
+        System.out.print("Enter first integer: ");
         int a = sc.nextInt();
 
-        System.out.print("enter the value of b : ");
+        System.out.print("Enter second integer: ");
         int b = sc.nextInt();
 
-        Calculator cal = new Calculator();
+        Calculator c = new Calculator();
 
-        System.out.println("sum : " + cal.sum(a,b));
-        System.out.println("difference : " + cal.diff(a,b));
-        System.out.println("multiplication : " + cal.mul(a,b));
-        System.out.println("division : " + cal.div(a,b));
-        System.out.println("remainder : " + cal.rem(a,b));
+        System.out.println("Sum = " + c.sum(a, b));
+        System.out.println("Product = " + c.product(a, b));
+        System.out.println("Difference = " + c.difference(a, b));
+        System.out.println("Quotient = " + c.quotient(a, b));
     }
 }
