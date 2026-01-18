@@ -13,7 +13,7 @@ public class NumberCalc extends AbstractCalc implements Operations {
         smallest = Math.min(a, Math.min(b, c));
     }
 
-    void display() {
+    public void display() {
         System.out.println("Sum = " + sum);
         System.out.println("Average = " + average);
         System.out.println("Product = " + product);
