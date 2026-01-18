@@ -1,10 +1,10 @@
 package LAB_01;
 
 
-import LAB_01.calculator.Calculator;
+import LAB_01.Q1_calculator.Calculator;
 import java.util.Scanner;
 
-public class C01_Q1 {
+public class Q1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
