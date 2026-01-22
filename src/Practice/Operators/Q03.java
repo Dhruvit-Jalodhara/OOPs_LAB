@@ -1,4 +1,4 @@
-package Practice.Identifiers_and_Variables;
+package Practice.Operators;
 
 public class Q03 {
     public static void main(String[] args) {
