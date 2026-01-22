@@ -1,5 +1,13 @@
 package LAB_01.Q3;
 
+abstract class AbstractCalc {
+    abstract void display();
+}
+
+interface Operations {
+    void calculate(int a, int b, int c);
+}
+
 public class NumberCalc extends AbstractCalc implements Operations {
     int sum, product, largest, smallest;
     double average;
