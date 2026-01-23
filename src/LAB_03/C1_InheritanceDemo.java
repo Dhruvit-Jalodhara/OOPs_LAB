@@ -2,7 +2,7 @@ package LAB_03;
 
 import java.util.*;
 
-class figure{
+class figure {
     double radius;
     double area;
     double volume;
@@ -15,7 +15,7 @@ class figure{
     }
 }
 
-class cone extends figure{
+class cone extends figure {
     double height;
     double slantHeight;
 
