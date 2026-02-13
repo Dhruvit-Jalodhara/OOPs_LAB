@@ -11,12 +11,12 @@ public class Q4 {
 
         int[] freq = new int[26];
         for(char ch : str.toCharArray()){
-
-            int idx = ch - 'a';
-
-            freq[idx]++;
-            if(freq[idx] > 1)
-                return false;   // duplicate elements
+            if (ch >= 'a' && ch <= 'z') {
+                int idx = ch - 'a';
+                freq[idx]++;
+                if(freq[idx] > 1)
+                    return false;   // duplicate elements
+            }
         }
 
         return true;

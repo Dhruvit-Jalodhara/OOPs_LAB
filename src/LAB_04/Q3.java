@@ -8,8 +8,7 @@ public class Q3 {
         int[] freq = new int[26];
 
         // Count frequency
-        for (int i = 0; i < str.length(); i++) {
-            char ch = str.charAt(i);
+        for (char ch : str.toCharArray()) {
 
             if (ch >= 'a' && ch <= 'z') {
                 freq[ch - 'a']++;
