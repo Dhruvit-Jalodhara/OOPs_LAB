@@ -14,6 +14,6 @@ public class Q3_Main {
 
         NumberCalc n = new NumberCalc();
         n.calculate(a, b, c);
-        n.display();
+
     }
 }
