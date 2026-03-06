@@ -9,21 +9,17 @@ public class Q1_ThreeDMatrix {
     // set function
     public static void set(int value, int indexX, int indexY, int indexZ, int[] oneDArray) {
 
-        int index = (indexX * Y * Z)
-                + (indexY * Z)
-                + indexZ;
+        int index = (indexX * Y * Z) + (indexY * Z) + indexZ;
 
         oneDArray[index] = value;
     }
 
     // get function (as per given prototype)
-    public static void get(int value, int indexX, int indexY, int indexZ, int[] oneDArray) {
+    public static void get(int indexX, int indexY, int indexZ, int[] oneDArray) {
 
-        int index = (indexX * Y * Z)
-                + (indexY * Z)
-                + indexZ;
+        int index = (indexX * Y * Z) + (indexY * Z) + indexZ;
 
-        value = oneDArray[index];
+        int value = oneDArray[index];
 
         System.out.println("Value at position ("
                 + indexX + "," + indexY + "," + indexZ + ") = " + value);
@@ -35,6 +31,6 @@ public class Q1_ThreeDMatrix {
 
         set(50, 1, 1, 1, arr);
 
-        get(0, 1, 1, 1, arr);
+        get(1, 1, 1, arr);
     }
 }
