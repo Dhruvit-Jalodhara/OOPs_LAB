@@ -1,7 +1,7 @@
 package LAB_01;
 
-
 import LAB_01.Q1_calculator.Calculator;
+
 import java.util.Scanner;
 
 public class Q1 {
@@ -14,11 +14,11 @@ public class Q1 {
         System.out.print("Enter second integer: ");
         int b = sc.nextInt();
 
-        Calculator c = new Calculator();
+        Calculator c = new Calculator(a,b);
 
-        System.out.println("Sum = " + c.sum(a, b));
-        System.out.println("Product = " + c.product(a, b));
-        System.out.println("Difference = " + c.difference(a, b));
-        System.out.println("Quotient = " + c.quotient(a, b));
+        System.out.println("Sum = " + c.sum());
+        System.out.println("Product = " + c.product());
+        System.out.println("Difference = " + c.difference());
+        System.out.println("Quotient = " + c.quotient());
     }
 }

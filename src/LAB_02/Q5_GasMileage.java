@@ -17,7 +17,7 @@ public class Q5_GasMileage {
             System.out.print("Gallons used: ");
             int gallons = sc.nextInt();
 
-            System.out.println("MPG = " + (double) miles / gallons);
+            System.out.println("MilesPerGallons = " + (double) miles / gallons);
 
             totalMiles += miles;
             totalGallons += gallons;

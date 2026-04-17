@@ -14,21 +14,48 @@ class Invoice {
     private int quantity;
     private double pricePerItem;
 
-    public Invoice(String pn, String pd, int q, double price) {
-        partNumber = pn;
-        partDescription = pd;
-        quantity = (q > 0) ? q : 0;
-        pricePerItem = (price > 0) ? price : 0.0;
+    public Invoice(String partNumber, String partDescription, int quantity, double pricePerItem) {
+        this.partNumber = partNumber;
+        this.partDescription = partDescription;
+        this.quantity = (quantity > 0) ? quantity : 0;
+        this.pricePerItem = (pricePerItem > 0) ? pricePerItem : 0.0;
     }
 
-    public void setQuantity(int q) {
-        quantity = (q > 0) ? q : 0;
+    // set methods
+    public void setPartNumber(String partNumber) {
+        this.partNumber = partNumber;
+    }
+
+    public void setPartDescription(String partDescription) {
+        this.partDescription = partDescription;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = (quantity > 0) ? quantity : 0;
+    }
+
+    public void setPricePerItem(int pricePerItem) {
+        this.pricePerItem = (pricePerItem > 0) ? pricePerItem : 0.0;
+    }
+
+    // Get methods
+    public String getPartNumber() {
+        return partNumber;
+    }
+
+    public String getPartDescription() {
+        return partDescription;
     }
 
     public int getQuantity() {
         return quantity;
     }
 
+    public double getPricePerItem() {
+        return pricePerItem;
+    }
+
+    // Method to calculate invoice amount
     public double getInvoiceAmount() {
         return quantity * pricePerItem;
     }

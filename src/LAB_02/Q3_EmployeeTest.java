@@ -8,8 +8,8 @@ public class Q3_EmployeeTest {
         System.out.println(e1.getYearlySalary());
         System.out.println(e2.getYearlySalary());
 
-        e1.hike();
-        e2.hike();
+        e1.giveHike();
+        e2.giveHike();
 
         System.out.println(e1.getYearlySalary());
         System.out.println(e2.getYearlySalary());
@@ -17,23 +17,54 @@ public class Q3_EmployeeTest {
 }
 
 class Employee {
+
     private String name;
     private String lastName;
-    private double salary;
+    private double monthlySalary;
 
-    public Employee(String n, String l, double s) {
-        name = n;
-        lastName = l;
-        if (s > 0)
-            salary = s;
+    // Constructor
+    public Employee(String name, String lastName, double monthlySalary) {
+
+        this.name = name;
+        this.lastName = lastName;
+
+        if(monthlySalary > 0)
+            this.monthlySalary = monthlySalary;
+    }
+
+    // Set methods
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setMonthlySalary(double monthlySalary) {
+        if(monthlySalary > 0)
+            this.monthlySalary = monthlySalary;
+    }
+
+    // Get methods
+    public String getName() {
+        return name;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public double getMonthlySalary() {
+        return monthlySalary;
     }
 
     public double getYearlySalary() {
-        return salary * 12;
+        return monthlySalary * 12;
     }
 
-    public void hike() {
-        salary = salary + salary * 0.10;
+    public void giveHike() {
+        monthlySalary = monthlySalary + (monthlySalary * 0.10);
     }
 }
 
